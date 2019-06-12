@@ -17,7 +17,7 @@ def lambda_handler(event,context):
 
         r = praw.Reddit('bot')
 
-        for post in r.subreddit('bottest00').new(limit=10):          #Get new posts
+        for post in r.subreddit('test').new(limit=10):          #Get new posts
             if re.search("stock", post.title, re.IGNORECASE):   #Search keyword 'stock'
                 pid = post.id
 
