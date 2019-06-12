@@ -1,6 +1,6 @@
 # RedditStockBot
 
-Proof-of-Concept Bot that looks for reddit posts containing the word 'stock' and replies with Captial One ticker price on 6/11
+Proof-of-Concept Bot that looks for reddit posts containing the word 'stock' and replies with Captial One ticker price as of 6/12
 
 Python:  
     packages - praw, pymysql, pandas_datareader  
