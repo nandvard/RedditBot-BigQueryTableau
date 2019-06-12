@@ -9,4 +9,4 @@ AWS:
     Lambda  
     mySQL
 
-To test, go to reddit.com/r/bottest00 and create a post with title 'stock', refresh after a minute.
+To test, go to reddit.com/r/test, create post with title 'stock', wait a minute, hit refresh.
