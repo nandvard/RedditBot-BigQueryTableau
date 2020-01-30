@@ -1,0 +1,20 @@
+SELECT
+  EXTRACT(year
+  FROM
+    TIMESTAMP_SECONDS(created_utc)) AS Year,
+  link_flair_text AS Topic,
+  COUNT(*) AS Posts
+FROM
+  `fh-bigquery.reddit_posts.20*`
+WHERE
+  subreddit = 'personalfinance'
+  AND link_flair_text IS NOT NULL
+  AND link_flair_text != ''
+GROUP BY
+  Year,
+  link_flair_text
+HAVING
+  Posts > 100
+ORDER BY
+  1,
+  2
